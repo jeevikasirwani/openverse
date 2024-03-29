@@ -11,7 +11,7 @@ noted otherwise in the Python column's name property.
 
 ## Image Properties
 | Name | DB Field | Python Column |
-| ---- | ---- | ---- |
+| --- | --- | --- |
 | [`identifier`](#identifier) | uuid, nullable | [UUIDColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L500-L517) (`upsert_strategy=newest_non_null, nullable=True, required=False`) |
 | [`created_on`](#created_on) | timestamp with time zone, non-nullable | [TimestampColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L520-L547) (`upsert_strategy=no_change, nullable=False, required=True`) |
 | [`updated_on`](#updated_on) | timestamp with time zone, non-nullable | [TimestampColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L520-L547) (`upsert_strategy=newest_non_null, nullable=False, required=True`) |
@@ -41,7 +41,7 @@ noted otherwise in the Python column's name property.
 
 ## Audio Properties
 | Name | DB Field | Python Column |
-| ---- | ---- | ---- |
+| --- | --- | --- |
 | [`identifier`](#identifier) | uuid, nullable | [UUIDColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L500-L517) (`upsert_strategy=newest_non_null, nullable=True, required=False`) |
 | [`created_on`](#created_on) | timestamp with time zone, non-nullable | [TimestampColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L520-L547) (`upsert_strategy=no_change, nullable=False, required=True`) |
 | [`updated_on`](#updated_on) | timestamp with time zone, non-nullable | [TimestampColumn](https://github.com/WordPress/openverse/blob/main/catalog/dags/common/storage/columns.py#L520-L547) (`upsert_strategy=newest_non_null, nullable=False, required=True`) |
@@ -86,202 +86,199 @@ UUID
 #### Selection Criteria
 Created when the item is inserted into the main table.
 
------
+----
 
 ### created_on
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### updated_on
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### ingestion_type
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### provider
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### source
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### foreign_identifier
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### foreign_landing_url
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### url
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### thumbnail
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### width
 _Media Types_: `image`
 
 
------
+----
 
 ### height
 _Media Types_: `image`
 
 
------
+----
 
 ### filesize
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### license
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### license_version
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### creator
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### creator_url
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### title
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### meta_data
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### tags
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### watermarked
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### last_synced_with_source
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### removed_from_source
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### filetype
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### category
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### standardized_popularity
 _Media Types_: `audio`, `image`
 
 
------
+----
 
 ### duration
 _Media Types_: `audio`
 
 
------
+----
 
 ### bit_rate
 _Media Types_: `audio`
 
 
------
+----
 
 ### sample_rate
 _Media Types_: `audio`
 
 
------
+----
 
 ### genres
 _Media Types_: `audio`
 
 
------
+----
 
 ### alt_files
 _Media Types_: `audio`
 
 
------
+----
 
 ### audio_set
 _Media Types_: `audio`
 
 
------
+----
 
 ### audio_set_foreign_identifier
 _Media Types_: `audio`
 
 
------
+----
 
 ### set_position
 _Media Types_: `audio`
-
-
------
