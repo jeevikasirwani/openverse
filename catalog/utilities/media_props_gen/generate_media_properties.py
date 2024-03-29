@@ -108,7 +108,7 @@ def generate_long_form_doc(markdown_descriptions: dict, media_properties: dict) 
         prop_heading += f"_Media Types_: {', '.join(media_types)}\n\n"
 
         prop_doc = "".join(
-            [f"{Md.heading(4, k)}{v}" for k, v in description.items() if v]
+            [f"{Md.heading(4, k)}{Md.line(v)}" for k, v in description.items() if v]
         )
         media_docs += prop_heading + prop_doc + Md.horizontal_line
 
@@ -146,15 +146,15 @@ def generate_markdown_doc() -> str:
 """.strip()
     # Remove trailing horizontal line that's causing
     # `Document may not end with a transition.` error
-    if media_props_doc.endswith("---"):
-        media_props_doc = media_props_doc[:-3]
+    if media_props_doc.endswith(Md.horizontal_line):
+        media_props_doc = media_props_doc[: -len(Md.horizontal_line)]
     return media_props_doc
 
 
 def write_media_props_doc(path: Path = DOC_MD_PATH) -> None:
     """Generate the DAG documentation and write it to a file."""
     doc_text = generate_markdown_doc()
-    log.info(f"Writing DAG doc to {path}")
+    log.info(f"Writing doc to {path}")
     path.write_text(doc_text)
 
 
